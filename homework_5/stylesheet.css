@@ -1,3 +1,119 @@
 body{
     background-color:#42200C;
 }
+
+.logo{ /* Placement of the logo */
+    width: 6%;
+    position:fixed;
+    z-index: 10;
+    margin: 12px 40px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #42200C;
+    z-index: 9; 
+}
+
+ul.topnav{
+    float:right;
+}
+
+ul.topnav li{
+    display: inline-block;
+    padding: 20px 41px;
+}
+
+ul.topnav li a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.topnav li a:hover{ /* What happens when the user hovers over the nav */
+    color: red;
+}
+
+.homePageImage{ /* Large background image of the home page */
+    width: 100%;
+}
+
+.hometext{ /* The background of the first block of text users will see*/
+    background: rgba(255, 255, 255, 0.61);
+    position: absolute;
+    width: 570px;
+    height: 304px;
+    left: 80px;
+    top: 235px;
+}
+
+.hometext h1{ /* The first text users will see. This is the prominent text*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    padding: 0px 50px;
+    color: #421212;
+}
+
+.hometext p{ /* The first text users will see. This is the less prominent text*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+    padding: 20px 50px 0px 50px;
+}
+
+.shopNow{ /* CTA Button */
+    background: black;
+    position: absolute;
+    width: 241px;
+    height: 81px;
+    left: 80px;
+    top: 566px;
+}
+
+.shopNow p{ /* CTA Button Text*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: repeat(2, 300px);
+    padding-top: 127px;
+    column-gap: 100px;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+.productCard{
+    width: 330px;
+}
+
+.productCard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productCard p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}
