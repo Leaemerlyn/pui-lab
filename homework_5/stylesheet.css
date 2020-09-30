@@ -1,9 +1,10 @@
 body{
     background-color:#42200C;
+    margin:0px;
 }
 
 .logo{ /* Placement of the logo */
-    width: 6%;
+    width: 80px;
     position:fixed;
     z-index: 10;
     margin: 12px 40px;
@@ -38,13 +39,16 @@ nav{
 
 .homePageImage{ /* Large background image of the home page */
     width: 100%;
+    height: 100%-91px;
+    top:91px;
+    position:absolute;
 }
 
 .hometext{ /* The background of the first block of text users will see*/
     background: rgba(255, 255, 255, 0.61);
     position: absolute;
-    width: 570px;
-    height: 304px;
+    width: 40%;
+    /* height: 304px; */
     left: 80px;
     top: 235px;
 }
@@ -72,13 +76,13 @@ nav{
 .shopNow{ /* CTA Button */
     background: black;
     position: absolute;
-    width: 241px;
-    height: 81px;
+    width: 20%;
+    /* height: 81px; */
     left: 80px;
     top: 566px;
 }
 
-.shopNow p{ /* CTA Button Text*/
+.shopNow a{ /* CTA Button Text*/
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
