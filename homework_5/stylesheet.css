@@ -3,6 +3,7 @@ body{
     margin:0px;
 }
 
+/*--------------------------------------  navigation ---------------------------------------*/
 .logo{ /* Placement of the logo */
     width: 80px;
     position:fixed;
@@ -17,7 +18,7 @@ nav{
     z-index: 9; 
 }
 
-.topnav{
+.topnav{ /* Makes text for nav on the right*/
     float:right;
 }
 
@@ -36,7 +37,9 @@ nav{
 .topnav li a:hover{ /* What happens when the user hovers over the nav */
     color: rgb(243, 114, 74);
 }
+/*--------------------------------------  navigation ---------------------------------------*/
 
+/*--------------------------------------  homepage ---------------------------------------*/
 .homePageImage{ /* Large background image of the home page */
     width: 100%;
     height: 100%-91px;
@@ -48,7 +51,6 @@ nav{
     background: rgba(255, 255, 255, 0.61);
     position: absolute;
     width: 40%;
-    /* height: 304px; */
     left: 80px;
     top: 235px;
 }
@@ -79,7 +81,6 @@ nav{
     background: black;
     position: absolute;
     width: 20%;
-    /* height: 81px; */
     left: 80px;
     top: 566px;
 }
@@ -94,8 +95,10 @@ nav{
     color: white;
     text-decoration: none;
 }
+/*--------------------------------------  homepage ---------------------------------------*/
 
-main{
+/*--------------------------------------  product page ---------------------------------------*/
+main{ /*Grid layout of the products page */
     display: grid;
     grid-template-columns: repeat(3, 330px);
     grid-template-rows: repeat(2, 300px);
@@ -105,28 +108,30 @@ main{
     justify-content: center;
 }
 
-.productCard{
+.productCard{ /* individual products of the product page */
     width: 330px;
 }
 
-.productCard img{ /* Images of the rolls on the shop page*/
+.productCard img{ /* Images of the rolls on the product page*/
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-img.productCardIcon{
+img.productCardIcon{ /* icons in the product page, below the images */
     width: 20px;
     height: 20px;
     float:right;
     margin: 5px 5px;
 }
 
-.productCardPrice{
+.productCardPrice{ /* price of the product page*/
     float: right;
     margin: 0px 5px;
 }
+/*--------------------------------------  product page ---------------------------------------*/
 
+/*--------------------------------------  product detail page ---------------------------------------*/
 .productDetailImage{ /* Image of the rolls on the product details page*/
     position: absolute;
     width: 435px;
@@ -136,14 +141,14 @@ img.productCardIcon{
     object-fit: cover;
 }
 
-.productDetailName{
+.productDetailName{ /* Name of the product*/
     position: absolute;
     left: 615px;
     top: 130px;
     padding: 0px;
 }
 
-.productDetailPrice{
+.productDetailPrice{ /* price of the product*/
     position: absolute;
     left: 1132px;
     top: 130px;
@@ -154,9 +159,6 @@ img.productCardIcon{
     position: absolute;
     left: 132px;
     top: 530px;
-}
-
-.productDetailDescription p{
     width: 435px;
 }
 
@@ -165,7 +167,8 @@ img.productCardIcon{
     top: 530px;
     left: 750px;
 }
-.ingredientsList{
+
+.ingredientsList{ /* Ingredients accordion */
     background-color: #51270F;
     color: white;
     padding: 15px;
@@ -181,7 +184,7 @@ img.productCardIcon{
     background-color: rgba(58, 14, 0, 0.616);
 }
 
-.glazing{
+.glazing{ /*glazing dropdown selection*/
     position: absolute;
     height: 52px;
     left: 615px;
@@ -215,7 +218,7 @@ img.productCardIcon{
     margin-right: 34px;
 }
 
-.quantity{
+.quantity{ /* Quantity dropdown selection*/
     position: absolute;
     height: 52px;
     left: 615px;
@@ -248,7 +251,7 @@ img.productCardIcon{
     margin-right: 20px;
 }
 
-.addToCart{
+.addToCart{ /* add to cart button*/
     position: absolute;
     width: 235px;
     height: 49px;
@@ -258,8 +261,10 @@ img.productCardIcon{
     color:white;
     border:none;
 }
+/*--------------------------------------  product detail page ---------------------------------------*/
 
-#aboutUs{
+/*--------------------------------------  about us  ---------------------------------------*/
+#aboutUs{ /* Image of the about us page*/
     position: absolute;
     width: 815px;
     height: 799px;
@@ -273,7 +278,9 @@ img.productCardIcon{
     top: 130px;
     left: 850px;
 }
+/*--------------------------------------  about us ---------------------------------------*/
 
+/*--------------------------------------  paragraph format ---------------------------------------*/
 h1{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -299,3 +306,4 @@ p{
     line-height: 30px;
     color: white;
 }
+/*--------------------------------------  paragraph format ---------------------------------------*/
