@@ -170,6 +170,7 @@ img.productCardIcon{ /* icons in the product page, below the images */
 
 .ingredientsList{ /* Ingredients accordion */
     background-color: #51270F;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 15px;
     width: 550px;
