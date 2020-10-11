@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Bun Buns Original</title>
     <link href= "stylesheet.css" type= "text/css" rel= "stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <a href= "index.html"><img class= "logo" src= "Images/logo.png"></a>
+    <a href= "index.html"><img class= "logo" src= "Images/logo.png" alt= "logo"></a>
     <nav>
         <ul class="topnav">
             <li><a href=shop.html>Shop</a></li>
@@ -17,7 +19,7 @@
         </ul>
     </nav> 
 
-    <img class= "productDetailImage" src= "Images/pumpkinspice.jpg">
+    <img class= "productDetailImage" src= "Images/pumpkinspice.jpg" alt= "Pumpkin Spice">
     <h1 class= "productDetailName">Pumpkin Spice</h1>
     <h1 class= "productDetailPrice">$3 per roll</h1>
 
@@ -38,8 +40,8 @@
 
     <section class= "glazing"><!-- Glazing dropdown selection-->
         <form>
-            <label for= "glazing"> Glazing</label>
-            <select name="glazing">
+            <label for= "glazingOption"> Glazing</label>
+            <select name="glazingOption" id= "glazingOption">
                 <option value="none"> None </option>
                 <option value= "sugarMilk"> Sugar Milk</option>
                 <option value= "vanillaMilk">Vanilla Milk</option>
@@ -50,8 +52,8 @@
 
     <section class= "quantity"> <!-- Quantity dropdown selection-->
         <form>
-            <label for= "quantity"> Quantity</label>
-            <select name= "quantity">
+            <label for= "quantityOption"> Quantity</label>
+            <select name= "quantityOption" id= "quantityOption">
                 <option value= "one"> 1 </option>
                 <option value= "three"> 3 </option>
                 <option value= "six"> 6 </option>

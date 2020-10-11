@@ -42,7 +42,6 @@ nav{
 /*--------------------------------------  homepage ---------------------------------------*/
 .homePageImage{ /* Large background image of the home page */
     width: 100%;
-    height: 100%-91px;
     top:91px;
     position:absolute;
 }
