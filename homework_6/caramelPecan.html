@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang= "en">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bun Buns Original</title>
+    <link href= "stylesheet.css" type= "text/css" rel= "stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href= "index.html"><img class= "logo" src= "Images/logo.png" alt= "logo"></a>
+    <nav>
+        <ul class="topnav">
+            <li><a href=shop.html>Shop</a></li>
+            <li><a id="cart" href=cart.html>Cart</a></li>
+            <li><a href=aboutUs.html>About Us</a></li>
+            <li><a>Login</a></li>
+        </ul>
+    </nav> 
+
+    <img class= "productDetailImage" src= "Images/caramelpecan.jpg" alt= "Caramel Pecan">
+    <h1 class= "productDetailName">Caramel Pecan</h1>
+    <h1 id="price" class= "productDetailPrice">$3</h1>
+
+    <div class= "productDetailDescription">
+        <h2 > Description</h2>
+        <p>
+            You didn't think that we can make caramel pecan vegan, but we did. This roll has a more mature flavor with the help of dark brown sugar and dry roated pecans.
+        </p>
+    </div>
+
+    <div class= "productDetailIngredients">
+        <h2> Ingredients</h2>
+        <p id= "ingredients">Unbleached all-purpose flour, plain almond milk, vegan butter, yeast, white sugar, brown sugar, pecans, cinnamon, salt</p>
+    </div>
+
+    <div class= "glazing"> <!-- Glazing dropdown selection-->
+        <form>
+            <label for= "glazingOption"> Glazing</label>
+            <select name="glazingOption" id= "glazingOption">
+                <option value="none"> None </option>
+                <option value= "sugarMilk"> Sugar Milk</option>
+                <option value= "vanillaMilk">Vanilla Milk</option>
+                <option value= "doubleChocolate"> Double Chocolate</option>
+            </select>
+        </form> 
+    </div>
+
+    <div class= "quantity"><!-- Quantity dropdown selection-->
+        <form>
+            <label for= "quantityOption"> Quantity</label>
+            <select name= "quantityOption" id= "quantityOption">
+                <option value= "one"> 1 </option>
+                <option value= "three"> 3 </option>
+                <option value= "six"> 6 </option>
+                <option value= "twelve"> 12 </option>
+            </select>
+        </form>
+    </div>
+
+    <button class= "addToCart" id="addToCart">Add to Cart</button>
+
+    <script src="productDetails.js"></script>
+</body>
+</html>

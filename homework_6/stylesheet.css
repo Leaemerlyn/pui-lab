@@ -1,0 +1,387 @@
+body{
+    background-color:#42200C;
+    margin:0px;
+}
+
+/*--------------------------------------  navigation ---------------------------------------*/
+.logo{ /* Placement of the logo */
+    width: 80px;
+    position:fixed;
+    z-index: 10;
+    margin: 12px 40px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #42200C;
+    z-index: 9; 
+}
+
+.topnav{ /* Makes text for nav on the right*/
+    float:right;
+}
+
+.topnav li{
+    display: inline-block;
+    padding: 20px 41px;
+}
+
+.topnav li a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav li a:hover{ /* What happens when the user hovers over the nav */
+    color: rgb(243, 114, 74);
+}
+/*--------------------------------------  navigation ---------------------------------------*/
+
+/*--------------------------------------  homepage ---------------------------------------*/
+.homePageImage{ /* Large background image of the home page */
+    width: 100%;
+    top:91px;
+    position:absolute;
+}
+
+.hometext{ /* The background of the first block of text users will see*/
+    background: rgba(255, 255, 255, 0.61);
+    position: absolute;
+    width: 40%;
+    left: 80px;
+    top: 235px;
+}
+
+.hometext h1{ /* The first text users will see. This is the prominent text*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    padding: 0px 50px;
+    color: #421212;
+    margin-top: 30px;
+}
+
+.hometext p{ /* The first text users will see. This is the less prominent text*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #000000;
+    padding: 0px 50px 0px 50px;
+    margin-top:40px;
+}
+
+.shopNow{ /* CTA Button */
+    background: black;
+    position: absolute;
+    width: 20%;
+    left: 80px;
+    top: 566px;
+}
+
+.shopNow a{ /* CTA Button Text*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+/*--------------------------------------  homepage ---------------------------------------*/
+
+/*--------------------------------------  product page ---------------------------------------*/
+main{ /*Grid layout of the products page */
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: repeat(2, 300px);
+    padding-top: 127px;
+    column-gap: 100px;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+.productCard{ /* individual products of the product page */
+    width: 330px;
+}
+
+.productCard img{ /* Images of the rolls on the product page*/
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+img.productCardIcon{ /* icons in the product page, below the images */
+    width: 20px;
+    height: 20px;
+    float:right;
+    margin: 5px 5px;
+}
+
+.productCardPrice{ /* price of the product page*/
+    float: right;
+    margin: 0px 5px;
+}
+/*--------------------------------------  product page ---------------------------------------*/
+
+/*--------------------------------------  product detail page ---------------------------------------*/
+.productDetailImage{ /* Image of the rolls on the product details page*/
+    position: absolute;
+    width: 435px;
+    height: 337px;
+    left: 157px;
+    top: 131px;
+    object-fit: cover;
+}
+
+.productDetailName{ /* Name of the product*/
+    position: absolute;
+    left: 675px;
+    top: 130px;
+    padding: 0px;
+}
+
+.productDetailPrice{ /* price of the product*/
+    position: absolute;
+    left: 1157px;
+    top: 130px;
+    padding:0px;
+}
+
+.productDetailDescription{
+    position: absolute;
+    left: 157px;
+    top: 530px;
+    width: 435px;
+}
+.productDetailIngredients{
+    position:absolute;
+    top: 530px;
+    left: 675px;
+    width: 600px;
+}
+
+.glazing{ /*glazing dropdown selection*/
+    position: absolute;
+    height: 52px;
+    left: 675px;
+    top: 249px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;   
+    color: white;
+    margin:10px;
+}
+
+.glazing select{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align-last: center;
+    color: white;
+    background-color:#51270F;
+    color: white;
+    width: 421px;
+    height: 52px;
+    border-radius: 5px;
+    border-color: #816D6D;
+}
+
+.glazing label{
+    margin-right: 34px;
+}
+
+.quantity{ /* Quantity dropdown selection*/
+    position: absolute;
+    height: 52px;
+    left: 675px;
+    top: 334px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+}
+
+.quantity select{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align-last: center;
+    color: white;
+    background-color:#51270F;
+    color: white;
+    width: 421px;
+    height: 52px;
+    border-radius: 5px;
+    border-color: #816D6D;
+}
+
+.quantity label{
+    margin-right: 20px;
+}
+
+.addToCart{ /* add to cart button*/
+    position: absolute;
+    width: 421px;
+    height: 52px;
+    left: 815px;
+    top: 419px;
+    background-color: black;
+    color:white;
+    border:none;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+/*--------------------------------------  product detail page ---------------------------------------*/
+
+/*--------------------------------------  about us  ---------------------------------------*/
+#aboutUs{ /* Image of the about us page*/
+    position: absolute;
+    width: 815px;
+    height: 799px;
+    left: 0px;
+    top: 103px;
+}
+
+#aboutUsText{
+    position: absolute;
+    width: 500px;
+    top: 130px;
+    left: 850px;
+}
+/*--------------------------------------  about us ---------------------------------------*/
+
+/*--------------------------------------  paragraph format ---------------------------------------*/
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    color: white;
+}
+
+h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+/*--------------------------------------  paragraph format ---------------------------------------*/
+
+.checkoutContainer{
+    display: flex;
+}
+
+.checkoutItems{
+    padding-top: 150px;
+    width: 70%;
+}
+
+.checkoutItems h2{
+    text-align: center;
+}
+
+.checkoutRight{
+    width: 30%;
+    padding: 150px 100px;
+}
+
+.checkoutButton{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.deliveryToggle{
+    display:flex;
+    flex-direction: column;
+}
+
+.address{
+    margin-left: 50px;
+}
+
+.address span{
+    font-size: 15px;
+}
+
+#delivery{
+    display:flex;
+    width: 124px;
+    height: 50px;
+    margin-bottom: 8px;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+}
+
+#pickup{
+    display: flex;
+    width: 124px;
+    height: 50px;
+    margin-top: 8px;
+    background-color: #464646;
+    align-items: center;
+    justify-content:center;
+}
+
+.prices{
+    float:right;
+}
+
+.checkoutPrice{
+    margin-top: 50px;
+}

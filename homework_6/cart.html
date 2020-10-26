@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bun Buns Home</title>
+    <link href= "stylesheet.css" type= "text/css" rel= "stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <a href= "index.html"><img class= "logo" src= "Images/logo.png" alt= "logo"></a>
+
+    <nav>
+        <ul class="topnav">
+            <li><a href=shop.html>Shop</a></li>
+            <li><a id="cart" href=cart.html>Cart</a></li>
+            <li><a href=aboutUs.html>About Us</a></li>
+            <li><a>Login</a></li>
+        </ul>
+    </nav> 
+
+    <div class= "checkoutContainer">
+        <div class= "checkoutItems">
+            <h2> Order Summary</h2>
+        </div>
+
+        <div class= "checkoutRight">
+            <div class= "delivery">
+                <div class= "deliveryToggle">
+                    <p id="delivery"> Delivery </p>
+                    <p id="pickup"> Pickup </p>
+                </div>
+
+                <p class= "address"> <b>Store Address:</b><br>
+                <span>456 Ellsworth Avenue <br>
+                Pittsburgh, PA 15213</span>
+                </p>
+            </div>
+
+            <div class= "checkoutPrice">
+            <p> Subtotal <span class="prices">$0</span></p>
+            <p> Tax <span class="prices"> $0</span></p>
+            <p> Delivery Fee <span id= "deliveryFee" class="prices">$4</span> </p>
+            <hr>
+            <p> Total <span class="prices">$0</span></p>
+            <br>
+            <button class= "checkoutButton">Checkout</button> 
+            </div>
+        </div>
+    </div>
+    <script src="cartPage.js"></script>
+</body>
+</html>
