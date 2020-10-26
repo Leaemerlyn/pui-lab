@@ -14,13 +14,21 @@ let delivery = true;
 function updateDeliveryButtonColor(){
     if (delivery){
         deliveryButton.style.backgroundColor = "black";
-        pickupButton.style.backgroundColor = "#464646";
+        deliveryButton.style.color= "white";
+        deliveryButton.style.cursor = "default";
+        pickupButton.style.color= "#a3a3a3d0";
+        pickupButton.style.backgroundColor = "#50505050";
+        pickupButton.style.cursor = "pointer";
         deliveryFeeAmount = 4;
         deliveryFee.innerHTML = "$" + deliveryFeeAmount;
     }
     else{
-        deliveryButton.style.backgroundColor = "#464646";
+        deliveryButton.style.backgroundColor = "#50505050";
+        deliveryButton.style.color= "#a3a3a3d0";
+        deliveryButton.style.cursor = "pointer";
+        pickupButton.style.color= "white";
         pickupButton.style.backgroundColor = "black";
+        pickupButton.style.cursor = "default";
         deliveryFeeAmount = 0;
         deliveryFee.innerHTML = "$" + deliveryFeeAmount;
     }
