@@ -6,6 +6,7 @@
     <title>Bun Buns Home</title>
     <link href= "stylesheet.css" type= "text/css" rel= "stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="cartPage.js" async></script>
 </head>
 
 
@@ -22,8 +23,36 @@
     </nav> 
 
     <div class= "checkoutContainer">
-        <div class= "checkoutItems">
-            <h2> Order Summary</h2>
+        <div class="checkoutLeft">
+            <h2> Order Summary</h2>  <!-- "Your Cart is Empty" when the cart is empty-->
+            <div id="checkoutItems" class= "checkoutItems">
+
+                <!-- <div class= "orders">
+                    <img src= Images/original.jpg>
+                    <div class= "orderColumn1">
+                        <p class= "orderName"> Original</p>
+                        <p class= "orderDetailsName"> Glazing</p>
+                        <p class= "orderDetailsName"> Quantity</p>
+                    </div>
+
+                    <div class= "orderColumn2">
+                        <p></p>
+                        <p class= "orderDetails">Sugar Milk</p>
+                        <p class= "orderDetails">6</p>
+                    </div>
+
+                    <div class= "orderColumn3">
+                        <p class= "orderPrice">$18</p>
+                        <p></p>
+                        <p></p>
+                        <p class= "removeButton">remove</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <p class= "specialInstructionsText"><b>Special Instructions</b></p>
+            <textarea class= "specialInstructions">Type in any special requests here....</textarea>
         </div>
 
         <div class= "checkoutRight">
@@ -40,16 +69,15 @@
             </div>
 
             <div class= "checkoutPrice">
-            <p> Subtotal <span class="prices">$0</span></p>
-            <p> Tax <span class="prices"> $0</span></p>
+            <p> Subtotal <span id= "subtotal" class="prices">$0</span></p>
+            <p> Tax <span id= "tax" class="prices"> $0</span></p>
             <p> Delivery Fee <span id= "deliveryFee" class="prices">$4</span> </p>
             <hr>
-            <p> Total <span class="prices">$0</span></p>
+            <p> Total <span id= "total" class="prices">$0</span></p>
             <br>
-            <button class= "checkoutButton">Checkout</button> 
+            <button id= "checkoutButton" class= "checkoutButton">Checkout</button> 
             </div>
         </div>
     </div>
-    <script src="cartPage.js"></script>
 </body>
 </html>

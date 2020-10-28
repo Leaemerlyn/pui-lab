@@ -15,6 +15,7 @@ if (storedNumCart != null)
 if (numCart != 0)
     cartText.innerHTML = "Cart (" + numCart + ")";
 let quantityList = [1, 3, 6, 12];
+let glazingList = ["None" , "Sugar Milk", "Vanilla Milk" , "Double Chocolate"]
 
 let glazingDropdown = document.getElementById("glazingOption");
 glazingDropdown.onchange = function (e) {
@@ -28,11 +29,24 @@ quantityDropdown.onchange = function(e){
 }
 
 let addToCart = document.getElementById("addToCart");
+let itemName = document.getElementById("itemName");
 addToCart.onclick = function(e) {
     e.preventDefault();
-    numCart += quantityList[quantityDropdown.selectedIndex];
+    let quantity = quantityList[quantityDropdown.selectedIndex];
+    numCart += quantity;
     cartText.innerHTML = "Cart (" + numCart + ")";
     sessionStorage.setItem("numCart", numCart.toString());
+
+    let name = itemName.innerHTML;
+    let glazing = glazingList[glazingDropdown.selectedIndex];
+    let keyString = name + "_" + glazing;
+    let previousAmount = sessionStorage.getItem(keyString);
+    if (previousAmount != null) {
+        quantity += parseInt(previousAmount)
+    }
+    
+    sessionStorage.setItem(keyString, quantity);
+
 };
 
 
