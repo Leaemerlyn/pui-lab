@@ -43,6 +43,20 @@ img {
     text-align: center;
 }
 
+.image-height{
+    max-height: 300px;
+    width:auto;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-style{
+    background-color: #eef4ffc2;
+}
+
 @media only screen and (max-width: 767px) {
     #large-logo{ 
         width: 90%;
