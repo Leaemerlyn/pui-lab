@@ -93,8 +93,8 @@ class Bubble{
         let oldTop = parseInt(window.getComputedStyle(this.element).top);
         this.element.style.top = Math.min(parseInt(window.getComputedStyle(this.element).top), 
             document.body.clientHeight- parseInt(window.getComputedStyle(this.element).height)).toString() + "px";
-        // this.element.style.left = Math.min(parseInt(window.getComputedStyle(this.element).left), 
-            // document.body.clientWidth- parseInt(window.getComputedStyle(this.element).width)).toString() + "px";
+        this.element.style.left = Math.min(parseInt(window.getComputedStyle(this.element).left), 
+            document.body.clientWidth- parseInt(window.getComputedStyle(this.element).width)).toString() + "px";
         if (oldTop != parseInt(window.getComputedStyle(this.element).top)){
             this.alpha -= this.fadeSpeed;
             this.element.style.backgroundColor = "rgba(255,255,255," + this.alpha + ")";
