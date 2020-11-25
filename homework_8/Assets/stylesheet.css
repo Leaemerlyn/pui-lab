@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background: linear-gradient(to bottom, hsl(209, 57%, 54%), hsl(239, 57%, 35%), hsl(269, 57%, 14%)); 
+    background: linear-gradient(to bottom, hsl(209, 40%, 39%), hsl(239, 100%, 17%), hsl(269, 100%, 7%)); 
     background-attachment: fixed;
   }
   
@@ -55,6 +55,17 @@ a, a:hover{
 
 .card-style{
     background-color: #eef4ffc2;
+}
+
+.circle{
+    height: 50px; 
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.3);
+    top: -70px;
+    left: 100px;
+    position: absolute;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 767px) {
