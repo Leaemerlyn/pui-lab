@@ -1,0 +1,102 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+strong{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+body{
+    height: 100%;
+    background: #031118; 
+    background-attachment: fixed;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 20%;
+  }
+
+.bg-color{
+    background: #305D80;
+}
+
+.project-brief{
+    margin-top: 15%;
+    font-size: 0.9rem;
+    margin-bottom: 15%;
+}
+
+.project-intro{
+    margin-bottom: 10%;
+}
+
+.project-image{
+    /* position: relative; */
+    width: 50%;
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: fill;
+}
+
+.screen-text{
+    padding-left: 5rem;
+    padding-top: 5rem;
+    height: 80%;
+}
+
+/* .project-image-background{
+    margin-top: 10%;
+    width: 80%;
+    z-index: 9;
+    position:absolute;
+} */
+
+.back{
+    position:fixed;
+    left:27px;
+    bottom: 38px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.embed{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+    .back{
+        visibility: hidden;
+    }
+
+    .project-image{
+        width: 50%;
+        margin-top: 7em;
+        margin-bottom: 0em;
+    }
+
+    .embed{
+        width: 100%;
+    }
+
+}

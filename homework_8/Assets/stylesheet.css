@@ -7,6 +7,7 @@ body{
 * {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    line-height: 180%;
 }
 
 .intro-text{
@@ -68,6 +69,35 @@ a, a:hover{
     z-index: -1;
 }
 
+.circle-image{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    border-color:white;
+    overflow: hidden;
+    width:300px;
+    height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.section{
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+ 
+#about-text{
+    color: white;
+    margin: 0% 8%;
+}
+
+#about-intro{
+    margin-bottom: 6%;
+}
+
 @media only screen and (max-width: 767px) {
     #large-logo{ 
         width: 90%;
@@ -75,5 +105,17 @@ a, a:hover{
     
     .intro-text{
         margin-top:0;
+    }
+
+    .circle-image{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .circle-image{
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 }
