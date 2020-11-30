@@ -90,6 +90,7 @@ a, a:hover{
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 100%;
 }
  
 #about-text{
@@ -110,14 +111,12 @@ a, a:hover{
         margin-top:0;
     }
 
-    .circle-image{
-        margin-bottom: 50px;
-        margin-top: 50px;
+    .about{
+        top: 10%;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        width: 100%;
     }
-
-    body{
-        margin: 0;
-      }
     
     .navbar-collapse{
         background-color: rgba(0, 0, 0, 0.514) ;
@@ -125,6 +124,11 @@ a, a:hover{
 }
 
 @media only screen and (max-width: 992px){
+    .circle-image{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
     .circle-image{
         margin-bottom: 50px;
         margin-top: 50px;
