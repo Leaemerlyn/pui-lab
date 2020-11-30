@@ -1,7 +1,9 @@
 body{
+    min-height: 100vh;
     height: 100%;
     background: linear-gradient(to bottom, hsl(209, 40%, 39%), hsl(239, 100%, 17%), hsl(269, 100%, 7%)); 
     background-attachment: fixed;
+    margin: 0 8%;
   }
   
 * {
@@ -9,6 +11,7 @@ body{
     font-weight: 300;
     line-height: 180%;
 }
+
 
 .intro-text{
     color:white;
@@ -44,10 +47,10 @@ img {
     text-align: center;
 }
 
-.image-height{
+/* .image-height{
     max-height: 300px;
     width:auto;
-}
+} */
 
 a, a:hover{
     text-decoration: none;
@@ -110,6 +113,14 @@ a, a:hover{
     .circle-image{
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+
+    body{
+        margin: 0;
+      }
+    
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.514) ;
     }
 }
 
