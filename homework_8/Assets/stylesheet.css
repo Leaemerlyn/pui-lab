@@ -82,7 +82,7 @@ a, a:hover{
     margin-right:auto;
 }
 
-.section{
+.about{
     top: 50%;
     position: absolute;
     -ms-transform: translateY(-50%);

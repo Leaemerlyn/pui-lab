@@ -46,11 +46,6 @@ function cssAdd( input, sum ){
 let mouseX = 0;
 let mouseY = 0;
 
-document.body.onmouseenter = function(e){
-    mouseX = e.clientX + document.documentElement.scrollLeft;
-    mouseY = e.clientY + document.documentElement.scrollTop;
-}
-
 document.body.onmousemove = function(e){
     mouseX = e.clientX + document.documentElement.scrollLeft;
     mouseY = e.clientY + document.documentElement.scrollTop;
