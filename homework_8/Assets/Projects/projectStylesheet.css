@@ -30,7 +30,7 @@ body{
 }
 
 .section-title{
-    color:red;
+    color:#ABFAFF;
 }
 
 .project-brief{
@@ -98,6 +98,10 @@ img {
 hr{
     background-color:white;
     width: 50%;
+}
+
+#prototype1{
+    background-color:white;
 }
 
 @media only screen and (max-width: 767px) {
