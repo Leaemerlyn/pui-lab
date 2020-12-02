@@ -1,9 +1,9 @@
 body{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: 100%;
     background: linear-gradient(to bottom, hsl(209, 40%, 39%), hsl(239, 100%, 17%), hsl(269, 100%, 7%)); 
     background-attachment: fixed;
-    margin: 0 8%;
+    margin: 0 7%;
   }
   
 * {
@@ -90,7 +90,7 @@ a, a:hover{
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%;
+/*    width: 100%;*/
 }
  
 #about-text{
@@ -122,6 +122,9 @@ a, a:hover{
         background-color: rgba(0, 0, 0, 0.514) ;
     }
 
+    body{
+        margin: 15px;
+    }
 }
 
 @media only screen and (max-width: 992px){
@@ -129,9 +132,5 @@ a, a:hover{
         margin-bottom: 50px;
         margin-top: 50px;
     }
-    
-    .circle-image{
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
+
 }

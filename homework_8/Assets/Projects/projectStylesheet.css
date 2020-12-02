@@ -29,6 +29,10 @@ body{
     background: #305D80;
 }
 
+.section-title{
+    color:red;
+}
+
 .project-brief{
     margin-top: 15%;
     font-size: 0.9rem;
@@ -39,7 +43,7 @@ body{
     margin-bottom: 10%;
 }
 
-.project-image{
+#project-image{
     /* position: relative; */
     width: 50%;
     margin-top: 9em;
@@ -77,11 +81,23 @@ img {
 }
 
 .embed{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#minute-embed{
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+}
+
+hr{
+    background-color:white;
+    width: 50%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -104,9 +120,17 @@ img {
     }
 
     img{
-        height:auto;
+        height: auto;
         min-width: 100%;
+        object-fit: scale-down;
+        align-items: flex-start;
     }
+
+    #project-image{
+        height:auto;
+        min-width: 0;
+        margin-bottom: 0;
+    } 
 
     .screen-text{
         padding-left: 15px;

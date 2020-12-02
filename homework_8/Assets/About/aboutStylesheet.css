@@ -1,0 +1,86 @@
+body{
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(to bottom, hsl(209, 40%, 39%), hsl(239, 100%, 17%), hsl(269, 100%, 7%)); 
+    background-attachment: fixed;
+  }
+  
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 180%;
+}
+
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.circle{
+    height: 50px; 
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.3);
+    top: -70px;
+    left: 100px;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle-image{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    border-color:white;
+    overflow: hidden;
+    width:300px;
+    height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+} 
+
+.about{
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+ 
+#about-text{
+    color: white;
+    margin: 0% 8%;
+} */
+
+#about-intro{
+    margin-bottom: 6%;
+}
+
+@media only screen and (max-width: 767px) {
+    .about{
+        top: 10%;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        width: 100%;
+    }
+    
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.514) ;
+    }
+
+    .circle-image{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .circle-image{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+}
