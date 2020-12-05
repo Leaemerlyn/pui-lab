@@ -58,7 +58,7 @@ a, a:hover{
 }
 
 .card-style{
-    background-color: #eef4ffc2;
+    background-color: #eef4ffd5;
 }
 
 .circle{
@@ -100,6 +100,18 @@ a, a:hover{
 
 #about-intro{
     margin-bottom: 6%;
+}
+
+/* .btn:hover{
+    background-color:red;
+    border-color: red;
+} */
+
+.btn{
+    color: rgb(82, 89, 95);
+    border-color: rgb(82, 89, 95);
+    padding: 2% 5%;
+    margin: 5% 0%;
 }
 
 @media only screen and (max-width: 767px) {

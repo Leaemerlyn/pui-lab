@@ -57,6 +57,17 @@ a, a:hover{
     margin-bottom: 6%;
 }
 
+#resume-button:hover{
+    background-color:red;
+    border-color: red;
+}
+
+#resume-button{
+    color:white;
+    border-color: white;
+    padding: 1.5% 4%;
+}
+
 @media only screen and (max-width: 767px) {
     .about{
         top: 10%;

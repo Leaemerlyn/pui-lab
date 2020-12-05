@@ -104,6 +104,17 @@ hr{
     background-color:white;
 }
 
+.btn:hover{
+    background-color:red;
+    border-color: red;
+}
+
+.btn{
+    color:white;
+    border-color: white;
+    padding: 1.5% 4%;
+}
+
 @media only screen and (max-width: 767px) {
     .back{
         visibility: hidden;
