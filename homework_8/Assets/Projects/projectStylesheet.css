@@ -139,6 +139,8 @@ hr{
         min-width: 100%;
         object-fit: scale-down;
         align-items: flex-start;
+        margin:0;
+        padding:0;
     }
 
     #project-image{
