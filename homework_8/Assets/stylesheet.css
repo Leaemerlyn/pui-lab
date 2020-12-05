@@ -16,10 +16,14 @@ body{
     margin: 0% 7%;
 }
 
+#intro-row{
+    margin: 3% 0% 5% 0%;
+}
+
 
 .intro-text{
     color:white;
-    margin-top: 45%;
+    margin-top: 39%;
     letter-spacing: 2px;
     font-size: 1.5em;
     font-weight: 100;
@@ -35,7 +39,7 @@ img {
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-45%, -45%);
+    transform: translate(-42%, -42%);
 }
 
 #large-logo{
@@ -118,6 +122,13 @@ a, a:hover{
     margin: 5% 0%;
 }
 
+html { scroll-behavior: smooth; } 
+
+#dive-in-button{
+    border-color: white;
+    color: white;
+}
+
 @media only screen and (max-width: 767px) {
     #large-logo{ 
         width: 90%;
@@ -145,12 +156,35 @@ a, a:hover{
     .project-list{
         margin: 0% 0%;
     }
+
+    #dive-in-button{
+        visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 992px){
     .circle-image{
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+
+    #large-logo{ 
+        width: 90%;
+    }
+    
+    .intro-text{
+        margin-top:0;
+    }
+
+    .about{
+        top: 10%;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        width: 100%;
+    }
+    
+    #dive-in-button{
+        visibility: hidden;
     }
 
 }
