@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href= "Assets/Projects/projectStylesheet.css" type= "text/css" rel= "stylesheet"> 
-    <!-- <link href= "Assets/stylesheet.css" type= "text/css" rel= "stylesheet">  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Lea's Projects</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="index.html"><img src="Assets/index/logo.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="Assets/index/logo.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,13 +31,12 @@
           </li>
         </ul>
       </div>
-  </nav>
+    </nav>
 
     <div class="container">
-      <div class="row bg-color px-3">
+      <div class="row bg-color px-3"> <!--intro to project-->
         <div class="col-md-5">
-          <!-- <img class="project-image-background img-responsive" src="Assets/Projects/15-minutes/background.png"> -->
-          <img id="project-image" src="Assets/Projects/15-minutes/main.png">
+          <img id="project-image" src="Assets/Projects/15-minutes/main.png" alt="screen">
         </div>
         <div class="col-md-7 project-brief">
           <h1 class= "project-name">15 Minutes</h1>
@@ -113,7 +112,7 @@
       </div>
 
       <div class="row">
-        <img class="img-fluid img-responsive" src="Assets/Projects/15-minutes/affinity.png">
+        <img class="img-fluid img-responsive" src="Assets/Projects/15-minutes/affinity.png" alt="affinity diagram">
       </div>
 
       <div class="row my-5">
@@ -121,14 +120,13 @@
           <h4 class="text-center section-title"> Defining the Problem </h4>
         </div>
         <div class="col-md-8">
-          <p><strong>How might we create a system where people can feel motivated to pursue their long term goals?</strong><br><br>
+          <strong>How might we create a system where people can feel motivated to pursue their long term goals?</strong><br><br>
               When building the app, I wanted to focus on 2 key takeaways from the user research:<br>
-            <ol>
-              <li>System needs a set time/schedule for the long term goals. People usually only log events and meetings on to their calendars, 
-                  which means that they always have to find time between the gaps of their schedule to work on their goals.</li><br>
-             
-              <li>Users find that their peers are a strong source of motivation. Therefore, the app needs to have a strong sense of collaboration . </li></p>
-            </ol>
+          <ol>
+            <li>System needs a set time/schedule for the long term goals. People usually only log events and meetings on to their calendars, 
+                which means that they always have to find time between the gaps of their schedule to work on their goals.</li>
+            <li>Users find that their peers are a strong source of motivation. Therefore, the app needs to have a strong sense of collaboration . </li>
+          </ol>
         </div>
       </div>
 
@@ -137,103 +135,91 @@
           <h4 class="text-center section-title">Prototyping</h4>
         </div>
         <div class="col-md-8">
-          <p>
-            <ol>
-              <li>To address the first issue, my team decided that users should set a time everyday dedicated to their long term goals. For example, everyday 6pm-7pm is for learning French. </li><br>
-              <li>To address the second issue, my team decided that users can add peers to the same long term goal. Friends added to the same goal will be able to keep track of the team's progress as well as keep each other accountable. </li>
-            Before starting to prototype, I created a user flow.
-            </ol>
-          </p>
+          <ol>
+            <li>To address the first issue, my team decided that users should set a time everyday dedicated to their long term goals. For example, everyday 6pm-7pm is for learning French. </li>
+            <li>To address the second issue, my team decided that users can add peers to the same long term goal. Friends added to the same goal will be able to keep track of the team's progress as well as keep each other accountable. </li>
+          </ol>
+          Before starting to prototype, I created a user flow.
         </div>
       </div>
 
       <div class="row">
-        <img class="img-fluid img-responsive" src="Assets/Projects/15-minutes/flow.png">
+        <img class="img-fluid img-responsive" src="Assets/Projects/15-minutes/flow.png" alt="flow">
       </div>
 
       <div class="row my-5">
         <div class="col-md-3">
-          <img class="img-fluid" src="Assets/Projects/15-minutes/home.png">
+          <img class="img-fluid" src="Assets/Projects/15-minutes/home.png" alt="home">
         </div>
         <div class="col-md-9 screen-text">
           <h3>Home Screen</h3>
-          <p>
-            On this screen, we show an overview of the user. <br>
+          On this screen, we show an overview of the user. <br>
             <ol>
               <li>Users can set new goals</li>
               <li>Users can take photos in order to show that they are making progress towards their long term goals</li>
               <li>They can get an overview of their progress for each goal</li>
               <li>The profile shows how many points they have been rewarded.</li>
             </ol>
-          </p>
         </div>
       </div>
 
       <div class="row my-5">
         <div class="col-md-3">
-          <img class="img-fluid" src="Assets/Projects/15-minutes/takingPicture.png">
+          <img class="img-fluid" src="Assets/Projects/15-minutes/takingPicture.png" alt="Taking Picture">
         </div>
         <div class="col-md-9 screen-text">
           <h3>Photo Screen</h3>
-          <p>
-            After users click on the photo icon to log their progress, they will be brought to this screen.<br>
-            <ol>
-              <li>Users will be allowed to take a photo in order to get credit for making progress towards their goals.</li>
-              <li>The top show what long term goals they are logging for.</li>
-            </ol>
-          </p>
+          After users click on the photo icon to log their progress, they will be brought to this screen.<br>
+          <ol>
+            <li>Users will be allowed to take a photo in order to get credit for making progress towards their goals.</li>
+            <li>The top show what long term goals they are logging for.</li>
+          </ol>
         </div>
       </div>
 
       <div class="row my-5">
         <div class="col-md-3">
-          <img class="img-fluid" src="Assets/Projects/15-minutes/photoDiary.png">
+          <img class="img-fluid" src="Assets/Projects/15-minutes/photoDiary.png" alt="Photo Dairy">
         </div>
         <div class="col-md-9 screen-text">
           <h3>Diary Screen</h3>
-          <p>
-            After taking a photo, it will be added to their photo diary. <br>
-            <ol>
-              <li>Users can see all the photos that they previously uploaded.</li>
-              <li>Users can also click into a photo to see comments</li>
-            </ol>
-          </p>
+          After taking a photo, it will be added to their photo diary. <br>
+          <ol>
+            <li>Users can see all the photos that they previously uploaded.</li>
+            <li>Users can also click into a photo to see comments</li>
+          </ol>
         </div>
       </div>
 
       <div class="row my-5">
         <div class="col-md-3">
-          <img class="img-fluid" src="Assets/Projects/15-minutes/progressGoals.png">
+          <img class="img-fluid" src="Assets/Projects/15-minutes/progressGoals.png" alt="Progress Goals">
         </div>
         <div class="col-md-9 screen-text">
           <h3>Progress Page</h3>
-          <p>
-            Users will be able to check their overall progress for a goal by clicking on the goal on the home page or through the tabs on top. <br><br>
-            <ol>
-              <li>Users can check how much they have left until completing their goal. </li>
-              <li>Users can check when their next milestone will be met.</li>
-              <li>Users can keep track of how many days they completed their tasks</li>
-              <li>Users can track how many points they earned</li><br>
-            </ol>
-            * The number of points will be calculated based on how many days they completed their tasks<br>
-          </p>
+          Users will be able to check their overall progress for a goal by clicking on the goal on the home page or through the tabs on top. <br><br>
+          <ol>
+            <li>Users can check how much they have left until completing their goal. </li>
+            <li>Users can check when their next milestone will be met.</li>
+            <li>Users can keep track of how many days they completed their tasks</li>
+            <li>Users can track how many points they earned</li>
+          </ol><br>
+          * The number of points will be calculated based on how many days they completed their tasks<br>
         </div>
       </div>
 
       <div class="row my-5">
         <div class="col-md-3">
-          <img class="img-fluid" src="Assets/Projects/15-minutes/definingGoals.png">
+          <img class="img-fluid" src="Assets/Projects/15-minutes/definingGoals.png" alt="Defining Goals">
         </div>
         <div class="col-md-9 screen-text">
           <h3>Setting Goals Page</h3>
-          <p>
-            When users click on new goal on the home screen, they will be brought to this page. 
-            <ol>
-              <li>Users can set the time, date and frequency of the goal.</li>
-              <li>Users can customize their milestones</li>
-              <li>Users can add their friends to this goal (not shown because it is under the scroll)</li>
-            </ol>
-          </p>
+          When users click on new goal on the home screen, they will be brought to this page. 
+          <ol>
+            <li>Users can set the time, date and frequency of the goal.</li>
+            <li>Users can customize their milestones</li>
+            <li>Users can add their friends to this goal (not shown because it is under the scroll)</li>
+          </ol>
         </div>
       </div>
 
@@ -242,26 +228,24 @@
           <h4 class="text-center section-title">Reflection</h4>
         </div>
         <div class="col-md-8">
-          <p>
-            <strong>If I had more time:</strong><br>
-            <ol>
-              <li>I would conduct more user testing on the prototype and complete more rounds of iteration</li>
-              <li>Design an onboarding system </li>
-              <li>Started off user testing using parallel testing rather than serial testing.</li>
-              <li>Added colors/illustrations for branding (I think that the UI could have more personality)</li>
-            </ol><br>
+          <strong>If I had more time:</strong><br>
+          <ol>
+            <li>I would conduct more user testing on the prototype and complete more rounds of iteration</li>
+            <li>Design an onboarding system </li>
+            <li>Started off user testing using parallel testing rather than serial testing.</li>
+            <li>Added colors/illustrations for branding (I think that the UI could have more personality)</li>
+          </ol><br>
 
-            <strong>Takeaways:</strong><br>
-            This was my first hackathon, and I was glad that I was able to work with a diverse group of people. 
-            Two of my teammates were from Harvard University, and they focused on backend programming,
-            while my third teammate was a high school senior who focused on the front-end. 
-            There was a lot of time pressure because I needed to deliver my insights and designs to my team quickly, so that we can start brain storming a solution. 
-            During the prototyping phase, I focused on four design principles: contrast, repetition, alignment, and proximity. 
-            These four principles are from The Non Designer's Design Book By Robin Williams.
-            These principles are mentioned in the first chapter of the book, and I wanted to gain experience training my designer's eye. 
-            I think that I could have been more bold by adding colors and being more creative. 
-            However, considering that I want to work on the basics and fundamentals of design, I am pleased with how it turned out. 
-          </p>
+          <strong>Takeaways:</strong><br>
+          This was my first hackathon, and I was glad that I was able to work with a diverse group of people. 
+          Two of my teammates were from Harvard University, and they focused on backend programming,
+          while my third teammate was a high school senior who focused on the front-end. 
+          There was a lot of time pressure because I needed to deliver my insights and designs to my team quickly, so that we can start brain storming a solution. 
+          During the prototyping phase, I focused on four design principles: contrast, repetition, alignment, and proximity. 
+          These four principles are from The Non Designer's Design Book By Robin Williams.
+          These principles are mentioned in the first chapter of the book, and I wanted to gain experience training my designer's eye. 
+          I think that I could have been more bold by adding colors and being more creative. 
+          However, considering that I want to work on the basics and fundamentals of design, I am pleased with how it turned out. 
         </div>
       </div>
       
